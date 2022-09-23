@@ -1,0 +1,19 @@
+{% extends "AppCoder/padre.html"%}
+
+
+{% load static %}
+
+{% block titulo%}
+<p>Buscaste este DNI: {{busqueda}}</p> 
+
+{% for dni1 in pepino %}
+<ul>
+    <li>
+        Nombre: {{dni1.Apellido}}
+    </li>
+    <li>
+        DNI: {{dni1.DNI}}
+    </li>
+</ul>
+{% endfor %}
+{% endblock %}

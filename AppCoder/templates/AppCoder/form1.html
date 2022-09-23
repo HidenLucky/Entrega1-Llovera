@@ -1,0 +1,12 @@
+{% extends "AppCoder/padre.html"%}
+
+
+{% load static %}
+
+{% block titulo%}
+
+<form action="/index/formulario/" method="POST"> {% csrf_token %}
+    {{form1}}
+    <input type="submit">
+</form>
+{% endblock %}
